@@ -18,6 +18,9 @@ In this chapter, you will:
 
 ## Learning goals
 
+
+
+
 At the end of this lesson, you'll be able to:
 
 - Explain what a text generation app is.
