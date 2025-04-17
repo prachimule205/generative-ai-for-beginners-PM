@@ -1,10 +1,10 @@
 from dotenv import load_dotenv
 import os
+import openai
 
-# Load environment variables from .env file
-load_dotenv()
+load_dotenv()  # This loads variables from .env into environment
 
-# Access the GITHUB_TOKEN variable
-github_token = os.getenv("GITHUB_TOKEN")
-
-print(github_token)
+openai.api_type = 'azure'
+openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_version = '2023-05-15'
+openai.api_base = os.getenv("API_BASE")
